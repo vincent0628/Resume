@@ -1,0 +1,12 @@
+.DS_Store
+.classpath
+.project
+target
+.settings
+*.log
+*.class
+*/pom.properties
+*/MANIFEST.MF
+application.yml
+/.idea
+

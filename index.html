@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+            __                                           __
+           |  \                                         |  \
+ __     __  \$$ _______    _______   ______   _______  _| $$_
+|  \   /  \|  \|       \  /       \ /      \ |       \|   $$ \
+ \$$\ /  $$| $$| $$$$$$$\|  $$$$$$$|  $$$$$$\| $$$$$$$\\$$$$$$
+  \$$\  $$ | $$| $$  | $$| $$      | $$    $$| $$  | $$ | $$ __
+   \$$ $$  | $$| $$  | $$| $$_____ | $$$$$$$$| $$  | $$ | $$|  \
+    \$$$   | $$| $$  | $$ \$$     \ \$$     \| $$  | $$  \$$  $$
+     \$     \$$ \$$   \$$  \$$$$$$$  \$$$$$$$ \$$   \$$   \$$$$
+
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="Vincent Huang" />
+    <meta name="description" content="This is my CV" />
+
+    <!--favicon圖示-->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!--ios設備添加到主螢幕的圖示-->
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
+
+    <!--loading css-->
+    <link href="css/pace-theme-flash.css" rel="stylesheet" type="text/css">
+
+    <!--全域定義css-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--自我調整css-->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!--字體圖示cdd-->
+    <link href="css/font.css" rel="stylesheet" type="text/css">
+
+    <!--icon-->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+        crossorigin='anonymous'>
+
+    <!--icon google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--kendo window-->
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.rtl.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.silver.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.1.220/styles/kendo.mobile.all.min.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.1.220/js/kendo.all.min.js"></script>
+    <title>Chun Resume</title>
+</head>
+
+<body>
+
+    <!-- sound -->
+    <div class="sound_area">
+        <div class="sa_start circle"><i aria-hidden="true" data-icon="&#xe01b;"></i></div>
+        <!--<div class="sa_info r5">-->
+        <!--<ul>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x4e;"></i>語音請使用/基於chrome流覽器</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x4e;"></i>請允許使用您的麥克風</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Hello"顯示語音助手</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Close"關閉窗口</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Contact"顯示聯繫方式</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Works"顯示專案/作品</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Print"列印此簡歷</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Goodbye"再見</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+    </div>
+
+    <div class="sound_help r5 sd">
+        <a href="javascript:;" class="close_help" aria-hidden="true" data-icon="&#x4d;"></a>
+        <h3><i aria-hidden="true" data-icon="&#xe01b;"></i>你好，我是語音小助手，請原諒我的愚鈍...</h3>
+        <!--<ul>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x51;"></i>關閉小助手請說"Over"</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Close"關閉窗口</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Contact (you)"顯示聯繫方式</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Print"列印此簡歷</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Works"顯示專案/作品</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x5b;"></i>說"(number) one"顯示專案1，共5個</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x5b;"></i>說"(number) more"顯示其他作品</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x5b;"></i>說"next"或"down"查看專案/作品時切換下一個</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x5b;"></i>說"previous"或"up"查看專案/作品時切換上一個</li>-->
+        <!--<li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Goodbye"再見</li>-->
+        <!--</ul>-->
+    </div>
+
+    <!--print button-->
+    <a href="javascript:;" class="r5 button_print btn_green">列印</a>
+
+    <div class="main">
+        <div class="content">
+            <!--header-->
+            <div class="header clearfix">
+                <div class="avatar">
+                    <a href="javascript:;" class="avatar_pic circle"><em class="circle doing">Me</em></a>
+                    <b class="doing r5">Man</b>
+                </div>
+                <div class="base">
+                    <h2>黃國郡 Vincent Huang</h2>
+                    <p>Engineer</p>
+                    <span>
+                        <p><i aria-hidden="true" data-icon="&#xe01d;"></i>Taiwan</p>
+                        <p><a href="javascript:;" class="tel_me"><i aria-hidden="true" data-icon="&#xe00b;"></i>Contact
+                                Me</a></p>
+                    </span>
+                    <p><a href="https://chun.nctu.me/"></a>chun.nctu.me</p>
+
+                </div>
+            </div>
+
+            <!--information-->
+            <div class="information clearfix">
+
+                <!--left-->
+                <div class="info_area info_left info_content">
+                    <em class="count"></em>
+                    <h5><i aria-hidden="true" class='fas fa-history'></i>My Story</h5>
+                    <!-- s1~s5 為對應右側 時間點 -->
+                    <p class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        熱愛接受挑戰與走出舒適圈，主動學習不同的技能、軟體。
+                        志向在資訊、電控產業，把握機會專注於課程吸收專業知識，已先修碩士班的一些課程，
+                        並積極培養外語能力，也參加各種比賽、研習，實習不斷了解自己不足之處，
+                        並學以致用，確定未來人生方向，期許我自己在未來能進入科技業，成為一個技術核心人才。</p>
+                    <p class="desc s1 s2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        畢業於國立交通大學機械工程學系，就學期間獲得不錯的成績肯定，即將前往台大電機碩士班就讀。
+                    </p>
+
+                    <p class="desc s4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        大二暑假時，前往中國蘇州實習，學習 PLC、MACRO
+                        撰寫、電箱配線、CADCAM 基本運用
+                        並完成一項公司交代的專案，使整個產線自動化。</p>
+
+                    <p class="desc s3">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        在交通大學提早畢業後，前往叡揚股份有限公司實習，工作內容為前後端網頁撰寫，活化MVC
+                        架構，撰寫資庫，數據雲端化
+                        利用Javascript(jquery)、java以及各種套件平台如:kendo、bootstrap、STS，而成雲端數據化。</p>
+
+
+                    <h5><i aria-hidden="true" class='fas fa-award'></i>Awards</h5>
+                    <div class="row">
+                        <b class="col">【特殊表現】</b>
+                    </div>
+                    <div class="row">
+                        <div class="offset-1 col-3 ">2019.2</div>
+                        <div class="col-3">書卷獎</div>
+                        <div class="col-3">第 1 名</div>
+                    </div>
+                    <!-- Force next columns to break to new line at md breakpoint and up -->
+                    <div class="w-100 d-none d-md-block"></div>
+                    <div class="row">
+                        <div class="offset-1  col-3">2018.9</div>
+                        <div class="col-3">書卷獎</div>
+                        <div class="col-3">第 1 名</div>
+                    </div>
+                    <!-- Force next columns to break to new line at md breakpoint and up -->
+                    <div class="row">
+                        <div class="w-100 d-none d-md-block"></div>
+                        <div class="offset-1  col-3">2018.2</div>
+                        <div class="col-3">書卷獎</div>
+                        <div class="col-3">第 3 名</div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <b class="col">【檢定證書】</b>
+                    </div>
+                    <div class="row">
+                        <div class="offset-1  col-2">2018.1</div>
+                        <div class="col">自動化工程師證照</div>
+                    </div>
+
+                    <h5><i aria-hidden="true" class="far fa-file-code"></i> Portfolio </h5>
+                    <ul>
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>PID 回授桌球發球機</h3>
+                                <h3><em>(人數:2)</em></h3>
+                                <p>以自動控制桌球發球機為主軸，利用 Matlab Gui 結合Arduino，
+                                    配上PID 控制，達穩定發球模式，促使運動員練習時，有固定路徑與球的旋度。</p>
+                            </div>
+                            <button type="button" id="detailBtn1" class="btn btn-primary btn-lg round">Detail
+                                > </i></button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>Kinect 影像結合機械手臂操作及其模擬系統開發</h3>
+                                <h3><em>(人數:2)</em></h3>
+                                <p>本研究提出一套控制手臂的新方法，並確實將之實現，透過C#，撰寫程式完成控制。使原本真實手臂UARM
+                                    與模擬介面都趨近人性化。</p>
+                                <button type="button" id="detailBtn2" class="btn btn-primary btn-lg round">Detail></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>智慧生活-人性化垃圾桶</h3>
+                                <h3><em>(人數:2)</em></h3>
+                                <p>藉由STM32 控制板，搭配C 語言，了解中斷及timer 應用，將此作品-紅外線垃圾桶完成。</p>
+                                <button type="button" id="detailBtn3" class="btn btn-primary btn-lg round">Detail></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>四軸飛行器實作</h3>
+                                <h3><em>(人數:2)</em></h3>
+                                <p>模擬研發團隊，進行客戶分析，使用ANSYS 分析各 個零件的強度，並用 SOLIDWORKS 繪製出零件
+                                    圖與工程圖。組裝完成後經由電腦模擬與實際飛行測試，並嘗試改良四軸飛行器。</p>
+                                <button type="button" id="detailBtn4" class=" btn btn-primary btn-lg round">Detail></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="clearfix">
+                            <div class="con">
+                                <h3><i aria-hidden="true" data-icon="&#x5b;"></i>工件出貨檢驗機械手臂自動化專案</h3>
+                                <h3><em>(人數:4)</em></h3>
+                                <p>以工業4.0 為目標，利用PLC、MACRO、eHMI傳統數位控制程式搭配視覺做影像處理，搭配六軸關節手臂，將待加工之配
+                                    料夾入CNC 再放入三軸測量機，完成一個產線的自動化。從中了解大型電箱input 及output 作用，實際完成工業配線。</p>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <button type="button" id="detailBtn5" class="product_5 btn btn-primary btn-lg round">Detail>
+                                        </button>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="javascript:;" class="btn_more r5">更多作品</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <!--<li class="clearfix">-->
+                        <!--<div class="con">-->
+                        <!--<h3><i aria-hidden="true" data-icon="&#x5b;"></i>-->
+                        <!--<em>(人數:2)</em>-->
+                        <!--<button type="button" class="product_5 btn btn-primary btn-lg round">Detail-->
+                        <!--&gt; </i></button>-->
+                        <!--</h3>-->
+                        <!--<p></p>-->
+                        <!--</div>-->
+                        <!--</li>-->
+                        <li class="clearfix">
+                            <div class="con">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--right-->
+                <div class="info_area info_right info_timeline">
+                    <h5><i aria-hidden="true" class='fas fa-school'></i>Education</h5>
+                    <ul>
+                        <li class="clearfix top" id="s1">
+                            <!--list樣式-->
+                            <div class="dot"><b></b></div>
+                            <!--內容-->
+                            <div class="con">
+                                <h3>台灣大學</h3>
+                                <p>電機所(EE)</p>
+                                <p class="desc">2019.9 - 2021.6</p>
+                            </div>
+                            <br />
+                        </li>
+                        <li class="clearfix bottom" id="s2">
+                            <!--list樣式-->
+                            <div class="dot"><b></b></div>
+                            <!--內容-->
+                            <div class="con">
+                                <h3>交通大學</h3>
+                                <p>機械系(ME)</p>
+                                <p class="desc">2015.9 - 2019.1(Early Graduation)</p>
+                                <br />
+                                <div class="row">
+                                    <p class="col-6 col-sm-4">GPA</p>
+                                </div>
+                                <div class="row desc">
+                                    <div class="col-6 col-sm-4">Overall</div>
+                                    <div class="col-6 col-sm-5">3.92 / 4.3</div>
+                                    <!-- Force next columns to break to new line at md breakpoint and up -->
+                                    <div class="w-100 d-none d-md-block"></div>
+                                    <div class="col-6 col-sm-4">Last 60 Credits</div>
+                                    <div class="col-6 col-sm-3">4.18 / 4.3</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h5><i aria-hidden="true" data-icon="&#x7d;"></i>Internship Experience</h5>
+                    <ul>
+                        <li class="clearfix top" id="s3">
+                            <!--list樣式-->
+                            <div class="dot"><b></b></div>
+                            <!--內容-->
+                            <div class="con">
+                                <div class="row ">
+                                    <div class="col-6 col-md-5">
+                                        <h3>叡揚</h3>
+                                        <p>助理程式設計工程師</p>
+                                        <p class="desc">2019.1 - 2019.3</p>
+                                    </div>
+                                    <div class="col justify-content-start align-self-center">
+                                        <img src="images/GSS.jpg" width="70%" alt="syntec.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix bottom" id="s4">
+                            <!--list樣式-->
+                            <div class="dot"><b></b></div>
+                            <!--內容-->
+                            <div class="con">
+                                <div class="row ">
+                                    <div class="col-6 col-md-5">
+                                        <h3>新代</h3>
+                                        <p>實習生</p>
+                                        <p class="desc">2017.7 - 2017.8</p>
+                                    </div>
+                                    <div class="col  justify-content-start align-self-center">
+                                        <img src="images/syntec.jpg" width="60%" alt="syntec.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h5><i class="fas fa-tools"></i>Skill</h5>
+
+                    <dl class="clearfix mt20">
+                        <dt>
+                            <h6><i aria-hidden="true" class="material-icons" style='font-size:24px'>language</i>language
+                                <h6>
+                        </dt>
+                        <dd></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Chinese</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>English</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Japanese</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix mt20">
+                        <dt>
+                            <h6><i aria-hidden="true" class="material-icons">web</i>Web<h6>
+                        </dt>
+                        <dd></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>HTML & CSS</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Javascript & Jquery</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Bootstrap</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix mt20">
+                        <dt>
+                            <h6><i aria-hidden="true" class='fas fa-laptop'></i>Platforms<h6>
+                        </dt>
+                        <dd></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Windows</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Linux(Ubuntu)</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+
+                    <dl class="clearfix mt20">
+                        <dt>
+                            <h6><i aria-hidden="true" class='fas fa-code-branch'></i>Version Control<h6>
+                        </dt>
+                        <dd></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Git</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix mt20">
+                        <dt>
+                            <h6><i aria-hidden="true" class='fas fa-code'></i>Software<h6>
+                        </dt>
+                        <dd></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Matlab</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>C</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Python</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Java</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+
+                    <dl class="clearfix mt20">
+                        <dt>
+                            <h6><i aria-hidden="true" class='fas fa-pencil-ruler'></i>CAD<h6>
+                        </dt>
+                        <dd></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Solidworks</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Autocad</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>Ansys</dt>
+                        <dd>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </dd>
+                    </dl>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer clearfix">
+        Powered By CHUN
+        <a href="https://github.com/vincent0628/Resume" target="_blank">github</a>
+    </div>
+
+    <!--個人基本資訊-->
+    <div class="tip_avatar" id="windowForAssign"">
+    <a href=" javascript:;" class="tip_close" aria-hidden="true"
+        data-icon="&#x4d;"></a>
+        <div class="tip_avatar_con">
+            <div class="tip_right">
+                <p class="en mt">Hello my name is</p>
+                <h2>黃國郡</h2>
+                <p>To be or not to be, that is a question.</p>
+                <p class="mt20">聯繫方式</p>
+                <p>Engineer</p>
+                <p><i aria-hidden="true" data-icon="&#xe010;"></i>vincent0910628007@gmail.com</p>
+                <p><i aria-hidden="true" data-icon="&#xe00b;"></i>0910628007</p>
+                <p><i aria-hidden="true" class='fab fa-facebook'></i>FB</p>
+                <p class="mt20"><span class="facebook"></span></p>
+            </div>
+            <p class="desc">just like me (Design by Vincent)</p>
+        </div>
+    </div>
+
+    <!--作品內容-->
+    <div id="project1" class="container" style="display:none">
+        <div class="row">
+            <div class="col">
+                <img class="d-block w-100 img-responsive" src="images/ball_machine.jpg" alt="First slide">
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <img class="d-block w-100 img-responsive" src="images/ballGUI.png" alt="Second slide">
+            </div>
+        </div>
+    </div>
+    <div id="project2" class="container" style="display:none">
+        <div class="row">
+            <div class="col">
+                <video controls src="images/robot1.mp4" controls="controls"></video>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <video controls src="images/robot2.mp4" controls="controls"></video>
+            </div>
+        </div>
+    </div>
+    <div class="bye"><span>再見</span></div>
+
+    <!--Jquery 2.1 不支持ie6、7、8-->
+    <!--<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>-->
+
+    <!--jquery 局部列印-->
+    <script type="text/javascript" src="js/jQuery.print.js"></script>
+
+    <!--jquery 動畫-->
+    <script type="text/javascript" src="js/jquery.transit.min.js"></script>
+
+    <!--jquery 輪播-基於bootstrap carousel-->
+    <script type="text/javascript" src="js/carousel.min.js"></script>
+
+    <!--jquery annyang sound control-->
+    <script type="text/javascript" src="js/annyang.min.js"></script>
+
+    <!--jquery loadding-->
+    <script type="text/javascript" src="js/pace.min.js"></script>
+
+    <!--effect-->
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+        $(function () {
+            $("#detailBtn1").click(function () {
+                $("#project1").data("kendoWindow").center().open();
+            });
+            $("#detailBtn2").click(function () {
+                $("#project2").data("kendoWindow").center().open();
+            });
+            $("#project1").kendoWindow({
+                width: "50%",
+                height: "70%",
+                iframe: true,
+                resizable: true,
+                title: "project1",
+                visible: false,
+                actions: [
+                    "Pin",
+                    "Minimize",
+                    "Maximize",
+                    "Close"
+                ],
+            });
+            $("#project2").kendoWindow({
+                width: "50%",
+                height: "70%",
+                iframe: true,
+                resizable: true,
+                title: "project2",
+                visible: false,
+                actions: [
+                    "Pin",
+                    "Minimize",
+                    "Maximize",
+                    "Close"
+                ],
+            });
+        });
+    </script>
+    <style>
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</body>
+
+</html>
