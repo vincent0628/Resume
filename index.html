@@ -572,14 +572,12 @@
     <script type="text/javascript" src="js/common.js"></script>
     <script>
         $(function () {
+            //BtnId,project initialize
             let BtnId = [];
             let project = [];
             for (i = 0; i < 6; i++) {
                 BtnId.push($("#detailBtn" + (i + 1)));
                 project.push($("#project" + (i + 1)));
-                BtnId[i].click(function () {
-                    project[i].data("kendoWindow").center().open().resize(true);
-                });
                 project[i].kendoWindow({
                     width: "80%",
                     height: "auto",
@@ -594,7 +592,14 @@
                         "Close"
                     ]
                 });
-            }
+            } //end of project initialize
+
+            BtnId.forEach(function (item, index) {
+                item.click(function () {
+                    project[index].data("kendoWindow").center().open().resize(true);
+                });
+            });
+
             $(".btn_more").click(function () {
                 project[5].data("kendoWindow").center().open().resize(true);
             });
