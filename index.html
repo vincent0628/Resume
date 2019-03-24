@@ -188,8 +188,7 @@
                                 <p>以自動控制桌球發球機為主軸，利用 Matlab Gui 結合Arduino，
                                     配上PID 控制，達穩定發球模式，促使運動員練習時，有固定路徑與球的旋度。</p>
                             </div>
-                            <button type="button" id="detailBtn1"
-                                class="btn btn-primary btn-lg round">Detail></button>
+                            <button type="button" id="detailBtn1" class="btn btn-primary btn-lg round">Detail></button>
                         </li>
                     </ul>
                     <ul>
@@ -540,7 +539,7 @@
             </div>
         </div>
     </div>
-    <div id="other_project" class="container-fluid" style="display:none">
+    <div id="project6" class="container-fluid" style="display:none">
         <div class="row-fluid">
             <div class="col">
                 <video muted controls src="images/stapler.mp4"></video>
@@ -571,13 +570,15 @@
     <script type="text/javascript" src="js/common.js"></script>
     <script>
         $(function () {
-            for (i = 1; i < 6; i++) {
-                let BtnId = $("#detailBtn" + i);
-                let project = $("#project" + i);
-                BtnId.click(function () {
-                    project.data("kendoWindow").center().open().resize(true);
+            let BtnId = [];
+            let project = [];
+            for (i = 0; i < 6; i++) {
+                BtnId.push($("#detailBtn" + (i + 1)));
+                project.push($("#project" + (i + 1)));
+                BtnId[i].click(function () {
+                    project[i].data("kendoWindow").center().open().resize(true);
                 });
-                project.kendoWindow({
+                project[i].kendoWindow({
                     width: "80%",
                     height: "auto",
                     iframe: true,
@@ -593,7 +594,7 @@
                 });
             }
             $(".btn_more").click(function () {
-                $("#other_project").data("kendoWindow").center().open().resize(true);
+                project[5].data("kendoWindow").center().open().resize(true);
             });
         });
     </script>
