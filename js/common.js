@@ -98,49 +98,6 @@ $(function() {
         $('.carousel').addClass('slide');
     }
 
-    //product carousel (以0为开始)
-    $('.product_1').click(function(){
-        del_slide();
-        $('.carousel').carousel(0);
-        add_slide();
-        open_layout();
-    }); 
-
-    $('.product_2').click(function(){
-        del_slide();
-        $('.carousel').carousel(1);
-        add_slide();
-        open_layout();
-    });
-
-    $('.product_3').click(function(){
-        del_slide();
-        $('.carousel').carousel(2);
-        add_slide();
-        open_layout();
-    });
-
-    $('.product_4').click(function(){
-        del_slide();
-        $('.carousel').carousel(3);
-        add_slide();
-        open_layout();
-    });
-
-    $('.product_5').click(function(){
-        del_slide();
-        $('.carousel').carousel(4);
-        add_slide();
-        open_layout();
-    });
-
-    $('.btn_more').click(function(){
-        del_slide();
-        $('.carousel').carousel(5);
-        add_slide();
-        open_layout();
-    });
-
     $('.carousel-control,.btn_go,.btn_more').bind('click',function(){
         $('.carousel-inner').scrollTop(0);
     });
@@ -172,32 +129,4 @@ $(function() {
             background: 'rgba(0,0,0,'+(scrollPos/300)+')'
         });
     });
-
-    //close sound help
-    $('.close_help').click(function(){
-        soundhelpClose();
-    });
-
 });
-
-function soundhelp(){
-    $('.sound_help').show().transition({
-        opacity: 1,
-        bottom: '-10px'
-    },500);
-}
-function soundhelpClose(){
-    $('.sound_help').transition({
-        opacity: 0,
-        bottom: '-360px'
-    },500,function(){
-        $(this).hide();
-    });
-}
-function byebye(){
-    $('.bye').show().transition({
-        opacity: 1
-    },1000,function(){
-        $('body').addClass('of');
-    });
-}
