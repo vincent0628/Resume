@@ -62,39 +62,6 @@
 
 <body>
 
-    <!-- sound -->
-    <!-- <div class="sound_area">
-        <div class="sa_start circle"><i aria-hidden="true" data-icon="&#xe01b;"></i></div>
-        <div class="sa_info r5">
-        <ul>
-        <li><i aria-hidden="true" data-icon="&#x4e;"></i>語音請使用/基於chrome流覽器</li>
-        <li><i aria-hidden="true" data-icon="&#x4e;"></i>請允許使用您的麥克風</li>
-        <li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Hello"顯示語音助手</li>
-        <li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Close"關閉窗口</li>
-        <li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Contact"顯示聯繫方式</li>
-        <li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Works"顯示專案/作品</li>
-        <li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Print"列印此簡歷</li>
-        <li><i aria-hidden="true" data-icon="&#x4e;"></i>說"Goodbye"再見</li>
-        </ul>
-        </div>
-    </div>
-    <div class="sound_help r5 sd">
-        <a href="javascript:;" class="close_help" aria-hidden="true" data-icon="&#x4d;"></a>
-        <h3><i aria-hidden="true" data-icon="&#xe01b;"></i>你好，我是語音小助手，請原諒我的愚鈍...</h3>
-        <ul>
-        <li><i aria-hidden="true" data-icon="&#x51;"></i>關閉小助手請說"Over"</li>
-        <li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Close"關閉窗口</li>
-        <li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Contact (you)"顯示聯繫方式</li>
-        <li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Print"列印此簡歷</li>
-        <li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Works"顯示專案/作品</li>
-        <li><i aria-hidden="true" data-icon="&#x5b;"></i>說"(number) one"顯示專案1，共5個</li>
-        <li><i aria-hidden="true" data-icon="&#x5b;"></i>說"(number) more"顯示其他作品</li>
-        <li><i aria-hidden="true" data-icon="&#x5b;"></i>說"next"或"down"查看專案/作品時切換下一個</li>
-        <li><i aria-hidden="true" data-icon="&#x5b;"></i>說"previous"或"up"查看專案/作品時切換上一個</li>
-        <li><i aria-hidden="true" data-icon="&#x5b;"></i>說"Goodbye"再見</li>
-        </ul>
-    </div> -->
-
     <!--print button-->
     <a href="javascript:;" class="r5 button_print btn_green">列印</a>
 
@@ -142,9 +109,11 @@
 
                     <p class="desc s3">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        在交通大學提早畢業後，前往叡揚股份有限公司實習，工作內容為前後端網頁撰寫，活化MVC
-                        架構，撰寫資庫，數據雲端化
-                        利用Javascript(jquery)、java以及各種套件平台如:kendo、bootstrap、STS，而成雲端數據化。</p>
+                        交通大學提早畢業後，前往叡揚股份有限公司實習，
+                        工作內容為前後端網頁撰寫，使用MVC架構完成CRUD
+                        利用Javascript(jquery)、java以及各種套件平台如:kendo、bootstrap、STS
+                        除此之外，利用Python使用機器學習完成設備大數據以及製程預估保養專案
+                    </p>
 
 
                     <h5><i aria-hidden="true" class="fas fa-award"></i>Awards</h5>
@@ -218,7 +187,7 @@
                         <li class="clearfix">
                             <div class="con">
                                 <h3><i aria-hidden="true" data-icon="&#x5b;"></i>四軸飛行器實作</h3>
-                                <h3><em>(人數:2)</em></h3>
+                                <h3><em>(人數:5)</em></h3>
                                 <p>模擬研發團隊，進行客戶分析，使用ANSYS 分析各 個零件的強度，並用 SOLIDWORKS 繪製出零件
                                     圖與工程圖。組裝完成後經由電腦模擬與實際飛行測試，並嘗試改良四軸飛行器。</p>
                                 <button type="button" id="detailBtn4"
@@ -329,87 +298,38 @@
                             </div>
                         </li>
                     </ul>
-                    <h5><i class="fas fa-tools"></i>Skill</h5>
-
-                    <dl class="clearfix mt20">
+                    <h5 id=Skill><i class="fas fa-tools"></i>Skill</h5>
+                    
+                    <dl id="language" class="clearfix mt20">
                         <dt>
-                            <h6><i aria-hidden="true" class="material-icons" style="font-size:24px">language</i>language
+                            <h6><i aria-hidden="true" class="material-icons" style="font-size:24px">language</i>Language
                             </h6>
                         </dt>
-                        <dd></dd>
                     </dl>
-                    <dl class="clearfix">
-                        <dt id="Chinese">Chinese</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="English">English</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt>Japanese</dt>
-                    </dl>
-                    <dl class="clearfix mt20">
+                    <dl id="web" class="clearfix mt20">
                         <dt>
                             <h6><i aria-hidden="true" class="material-icons">web</i>Web</h6>
                         </dt>
                     </dl>
-                    <dl class="clearfix">
-                        <dt id="HTMLCSS">HTML & CSS</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="Javascript">Javascript & Jquery</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="Bootstrap">Bootstrap</dt>
-                    </dl>
-                    <dl class="clearfix mt20">
+                    <dl id="platforms" class="clearfix mt20">
                         <dt>
                             <h6><i aria-hidden="true" class="fas fa-laptop"></i>Platforms</h6>
                         </dt>
                     </dl>
-                    <dl class="clearfix">
-                        <dt id="Windows">Windows</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="Linux">Linux(Ubuntu)</dt>
-                    </dl>
-                    <dl class="clearfix mt20">
+                    <dl id="version_control" class="clearfix mt20">
                         <dt>
                             <h6><i aria-hidden="true" class="fas fa-code-branch"></i>Version Control</h6>
                         </dt>
                     </dl>
-                    <dl class="clearfix">
-                        <dt id="Git">Git</dt>
-                    </dl>
-                    <dl class="clearfix mt20">
+                    <dl id ="software" class="clearfix mt20">
                         <dt>
                             <h6><i aria-hidden="true" class="fas fa-code"></i>Software</h6>
                         </dt>
                     </dl>
-                    <dl class="clearfix">
-                        <dt id="Matlab">Matlab</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="C">C</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="Python">Python</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="Java">Java</dt>
-                    </dl>
-                    <dl class="clearfix mt20">
+                    <dl id="CAD" class="clearfix mt20">
                         <dt>
                             <h6><i aria-hidden="true" class="fas fa-pencil-ruler"></i>CAD</h6>
                         </dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="Solidworks">Solidworks</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="Autocad">Autocad</dt>
-                    </dl>
-                    <dl class="clearfix">
-                        <dt id="Ansys">Ansys</dt>
                     </dl>
                 </div>
             </div>
@@ -505,9 +425,6 @@
 
     <!--jquery 輪播-基於bootstrap carousel-->
     <script type="text/javascript" src="js/carousel.min.js"></script>
-
-    <!--jquery annyang sound control-->
-    <script type="text/javascript" src="js/annyang.min.js"></script>
 
     <!--jquery loadding-->
     <script type="text/javascript" src="js/pace.min.js"></script>
