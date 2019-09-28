@@ -158,6 +158,9 @@
                                 <p>以自動控制桌球發球機為主軸，利用 Matlab Gui 結合Arduino，
                                     配上PID 控制，達穩定發球模式，促使運動員練習時，有固定路徑與球的旋度。</p>
                             </div>
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    Launch demo modal
+                            </button>
                             <button type="button" id="detailBtn1" class="btn btn-primary btn-lg round">Detail></button>
                         </li>
                     </ul>
@@ -348,7 +351,7 @@
                 <p>Engineer</p>
                 <p><i aria-hidden="true" data-icon="&#xe010;"></i>vincent0910628007@gmail.com</p>
                 <p><i aria-hidden="true" data-icon="&#xe00b;"></i>0910628007</p>
-                <p><i aria-hidden="true" class="fab fa-facebook"></i>FB</p>
+                <p><i aria-hidden="true" class="fab fa-facebook"></i>FB<a href="https://www.facebook.com/vincent0628">https://www.facebook.com/vincent0628</a>	</p>
                 <p class="mt20"><span class="facebook"></span></p>
             </div>
             <p class="desc">just like me (Design by Vincent)</p>
@@ -357,6 +360,25 @@
     <div class="tip_avatar_bg"></div>
 
     <!--作品內容-->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+            <video controls id="video1" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="images/robot1.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
     <div id="project1" class="container-fluid" style="display:none">
         <div class="row">
             <div class="col">
