@@ -63,27 +63,28 @@
 }
 
 .info_content.over .s5.curr {
-    height: 474px
+    padding-top: 560px;
+    height: 600px
 }
 
 .info_content.over .s4.curr {
     padding-top: 500px;
-    height: 560px
+    height: 600px
 }
 
 .info_content.over .s3.curr {
     padding-top: 400px;
-    height: 560px
+    height: 600px
 }
 
 .info_content.over .s2.curr {
     padding-top: 120px;
-    height: 560px
+    height: 300px
 }
 
 .info_content.over .s1.curr {
     padding-top: 0px;
-    height: 560px
+    height: 300px
 }
 
 .info_content ul li .btn_go {
