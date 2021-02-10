@@ -33,23 +33,20 @@ $(function () {
     });
 
     let ability = [
-        { mother: "language", content: "Chinese", energy: 10 },
-        { mother: "language", content: "English", energy: 8 },
-        { mother: "language", content: "Japanese", energy: 4 },
-        { mother: "web", content: "HTML & CSS", energy: 9 },
-        { mother: "web", content: "Javascript", energy: 9 },
-        { mother: "web", content: "Bootstrap", energy: 9 },
-        { mother: "platforms", content: "Windows", energy: 10 },
-        { mother: "platforms", content: "Linux(Ubuntu)", energy: 7 },
-        { mother: "version_control", content: "Git", energy: 9 },
-        { mother: "software", content: "Python", energy: 9 },
-        { mother: "software", content: "ROS", energy: 8 },
-        { mother: "software", content: "Matlab", energy: 8 },
-        { mother: "software", content: "C", energy: 8 },
-        { mother: "software", content: "Java", energy: 5 },
-        { mother: "CAD", content: "Solidworks", energy: 8 },
-        { mother: "CAD", content: "Autocad", energy: 6 },
-        { mother: "CAD", content: "Ansys", energy: 5 }
+        { mother: "language", content: "English", energy: 4 },
+        { mother: "language", content: "Japanese", energy: 2 },
+        { mother: "web", content: "HTML & CSS", energy: 5 },
+        { mother: "web", content: "Javascript", energy: 5 },
+        { mother: "web", content: "Bootstrap", energy: 5 },
+        { mother: "platforms", content: "Linux(Ubuntu)", energy: 5 },
+        { mother: "version_control", content: "Git", energy: 5 },
+        { mother: "software", content: "Python", energy: 5 },
+        { mother: "software", content: "ROS", energy: 5 },
+        { mother: "software", content: "Matlab", energy: 5 },
+        { mother: "software", content: "C", energy: 3 },
+        { mother: "software", content: "Java", energy: 3 },
+        { mother: "CAD", content: "Solidworks", energy: 5 },
+        { mother: "CAD", content: "Autocad", energy: 3 },
     ];
     let solidCircle = "<b></b>";
     let emptyCircle = "<em></em>";
@@ -62,9 +59,9 @@ $(function () {
             iniMother = item.mother;
         }
         currentHTML += `
-                        <dl class="clearfix">
+                        <dl class="clearfix info_timeline">
                         <dt>${item.content}</dt>
-                        <dd>${solidCircle.repeat(item.energy)}${emptyCircle.repeat(10 - item.energy)}</dd>
+                        <dd>${solidCircle.repeat(item.energy)}${emptyCircle.repeat(5 - item.energy)}</dd>
                         </dl>
                         `;
         if (index === ability.length - 1)
