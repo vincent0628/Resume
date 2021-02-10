@@ -41,7 +41,6 @@ $(function () {
         { mother: "platforms", content: "Linux(Ubuntu)", energy: 5 },
         { mother: "version_control", content: "Git", energy: 5 },
         { mother: "software", content: "Python", energy: 5 },
-        { mother: "software", content: "ROS", energy: 5 },
         { mother: "software", content: "Matlab", energy: 5 },
         { mother: "software", content: "C", energy: 3 },
         { mother: "software", content: "Java", energy: 3 },
