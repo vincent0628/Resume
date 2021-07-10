@@ -129,4 +129,15 @@ $(function() {
             background: 'rgba(0,0,0,'+(scrollPos/300)+')'
         });
     });
+
+    $('.linkedin').click(function(){
+        window.open("https://www.linkedin.com/in/vincent-kuo-chun-huang-6ab255146/", "Vincent_Linkedin");
+    });
+    $('.myWebsite').click(function(){
+        window.open("https://vincent0628.github.io/Resume/", "Vincent_Website");
+    });
+    // $('.gmail').click(function(){
+    //     window.open("vincent0910628007@gmail.com", "gmail");
+    // });
+    
 });
