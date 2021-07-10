@@ -31,7 +31,7 @@ $(function () {
     $(".btn_more").click(function () {
         project[5].data("kendoWindow").center().open().resize(true);
     });
-    /*
+
     let ability = [
         // { mother: "language", content: "English", energy: 4 },
         // { mother: "language", content: "Japanese", energy: 2 },
@@ -66,5 +66,4 @@ $(function () {
         if (index === ability.length - 1)
             $(currentHTML).insertAfter("#" + iniMother);
     })
-    */
 });
