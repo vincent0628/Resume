@@ -126,7 +126,7 @@ i { font-size: 20px; }
 .info_content ul li p { padding-left: 26px; color: #999; }
 .info_content ul li p i { margin-left: 5px; }
 .info_content ul li .btn_go i { float: right; font-size: 20px; }
-.info_content ul li .btn_more { width: 80px; height: 30px; line-height: 30px; border: 1px #ccc solid; display: block; margin-left: 0px; text-align: center;}
+.info_content ul li .btn_more { width: 200px; height: 30px; line-height: 30px; border: 1px #ccc solid; display: block; margin-left: 25px; text-align: center;}
 .info_content ul:hover li .btn_more { display: block; }
 
 .info_timeline ul li { list-style: none; position: relative; overflow: hidden; padding-bottom: 20px; }
