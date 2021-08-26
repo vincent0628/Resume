@@ -63,7 +63,7 @@ input:-moz-placeholder { color: rgba(255,255,255,0.5); }
 .count { font-style: italic; }
 .desc { color: #999; }
 i { font-size: 20px; }
-.info_area h5 { font-size: 22px; line-height: 20px; font-weight: normal; border-bottom: 1px #ddd solid; padding: 10px 0 10px; margin-bottom: 15px; }
+.info_area h5 { color: black; font-size: 22px; line-height: 20px; font-weight: normal; border-bottom: 1px #ddd solid; padding: 10px 0 10px; margin-bottom: 15px; }
 .info_area h5 i { float: left; margin-right: 5px; }
 .mt20 { margin-top: 20px; }
 
@@ -109,7 +109,7 @@ i { font-size: 20px; }
 .base { padding: 27px 0 0; position: relative; }
 .base p { color: #aaa; line-height: 20px; }
 .base p.desc { color: #ccc; }
-.base h2 { font-size: 32px; color: #999; font-weight: normal; padding: 5px 0; }
+.base h2 { font-size: 32px; color: black; font-weight: normal; padding: 5px 0; }
 .base span p { padding: 0 0 10px; }
 .base span i { font-size: 16px; color: #999; margin-right: 5px; float: left; }
 .tel_me { color: #aaa; }
