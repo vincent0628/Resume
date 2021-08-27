@@ -44,9 +44,6 @@
     float: right;
 }
 
-.tip_avatar_con {
-    background: url('../images/cartoon.png') no-repeat 20% center;
-}
 
 .tip_right {
     width: 45%;
@@ -269,10 +266,6 @@
 
     .footer a {
         float: none;
-    }
-
-    .tip_avatar_con {
-        background-position: center center;
     }
 
     .tip_right {
