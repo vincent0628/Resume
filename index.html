@@ -65,48 +65,35 @@
 
     <!--print button-->
     <a href="javascript:;" class="r5 button_print btn_green">Print</a>
-
     <div class="main">
         <div class="content">
             <!--header-->
             <div class="header clearfix">
-                <div class="avatar">
-                    <a href="javascript:;" class="avatar_pic circle"><em class="circle doing">Me</em></a>
-                    <!-- <b class="doing r5">Man</b> -->
-                </div>
-                <div class="base">
-                    <h2>Vincent, Kuo-Chun Huang 黃國郡 </h2>
-                    <br>
-                    <p>
-                        <!-- <i aria-hidden="true" data-icon="&#xe051;"></i> -->
-                        <a href="javascript:;" class="myWebsite">
-                            https://vincent0628.github.io/Resume/
-                        </a>
-                    </p>
-
-                    <p>
-                        <!-- <img width="1.8%" src = "images/linkedIn.svg" alt="linkedIn.svg"/> -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="avatar">
+                            <a href="javascript:;" class="avatar_pic circle">
+                                <em class="circle doing">About Me</em>
+                            </a>
+                            <b class="doing r5">Contact Me</b>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <p style="font-size:38px;color: black; font-weight: normal; padding: 5px 0;">
+                            Vincent, Kuo-Chun Huang 黃國郡 
+                        </p>
                         <a href="javascript:;" class="linkedin">
                             https://www.linkedin.com/in/vincent-kuo-chun-huang-6ab255146/
+                        </a><br>
+                        <a href="javascript:;" class="myWebsite">
+                            https://vincent0628.github.io/Resume/
+                        </a><br>
+                        <a href="javascript:;" class="gmail">
+                            vincent0910628007@gmail.com
                         </a>
-                    </p>
-
-                    <span>
-                        <!-- <p><i aria-hidden="true" data-icon="&#xe01d;"></i>Taiwan</p> -->
-                        <p>
-                            <a href="javascript:;" class="tel_me">
-                                <i aria-hidden="true" data-icon="&#xe00b;"></i>
-                                Contact Me
-                            </a>
-                        </p>
-                        <p>
-                            <a href="javascript:;" class="gmail"> 
-                                <i aria-hidden="true" data-icon="&#xe010;"></i>
-                                vincent0910628007@gmail.com 
-                            </a>
-                        </p>
-                    </span>
+                    </div>
                 </div>
+
             </div>
             <!--information-->
             <div class="information clearfix">
@@ -115,7 +102,7 @@
                     <em class="count"></em>
                     <h5><i aria-hidden="true" class="fas fa-history"></i>Professional Summary</h5>
                     <!-- s1~s5 為對應右側 時間點 -->
-                    <div class="row ">
+                    <div class="row text-justify">
                         <div class="col-1"> 1. </div>
                         <div class="col-11">
                             2021 graduated student from master of NTU EE with 2 years industry-academia cooperation
@@ -172,22 +159,22 @@
                     <div class="row">
                         <b class="col">【Conference】</b>
                     </div>
-                    <div class="offset-1  row">
-                        <p>
+                    <div class="offset-1  row text-justify">
+                        <p class="dist">
                             <b style="text-decoration:underline;" color='black'>Kuo-Chun Huang</b>
-                            , Po-Yu Lin, Jie Wang, Feng-Li Lian, “
+                            , Po-Yu Lin, Jie Wang, Feng-Li Lian,“
                             <strong>
-                                Cyber-Physical Simulation Platforms for Generating Rich Data and Evaluating Control Tasks
+                            Cyber-Physical Simulation Platforms for Generating Rich Data and Evaluating Control Tasks
                             </strong>
-                            ,” in Proceedingsof the 17th International Conference on Automation Technology, Hualien, Taiwan, Nov. 2020
+                            ,”in Proceedingsof the 17th International Conference on Automation Technology, Hualien, Taiwan, Nov. 2020
                         </p>
                     </div>
-                    <div class="offset-1  row">
-                        <p class=><b style="text-decoration:underline;" color='black'>Kuo-Chun Huang</b>, Feng-Li Lian, “
+                    <div class="offset-1  row  text-justify">
+                        <p class=><b style="text-decoration:underline;" color='black'>Kuo-Chun Huang</b>, Feng-Li Lian,“
                             <strong>An Obstacle Avoidance System Using Boustrophedon Motions and Rapid Voronoi Diagram with Replanning Mechanism in Irregular Environment for Outdoor
                                 Robot Systems
                             </strong>
-                            ,” in Proceedings of CACS International Automatic Control Conference, Chiayi, Taiwan, Nov.
+                            ,”in Proceedings of CACS International Automatic Control Conference, Chiayi, Taiwan, Nov.
                             2021(Submitted)
                         </p>
                     </div>
@@ -195,12 +182,19 @@
                         <b class="col">【Journal】                           
                         </b>
                     </div>
-                    <div class="offset-1  row">
+                    <div class="offset-1 row text-justify">
                         <div>
                             <p>
-                                <b style="text-decoration:underline;" color='black'>Kuo-Chun Huang</b>, Feng-Li Lian, Chien-Tung Chen, Chung-Hou Wu and Chao-Cheng Chen“
-                                <strong>A novel solution with rapid Voronoi-based coverage path planning in irregular environment for robotic mowing systems
-                                </strong>,”International Journal of Intelligent Robotics and Applications (2021). 
+                                <b style="text-decoration:underline;" color='black'>
+                                    Kuo-Chun Huang
+                                </b>
+                                , Feng-Li Lian, Chien-Tung Chen et al.“ 
+                                <strong>
+                                    A novel solution with rapid Voronoi-based coverage path planning in irregular environment for robotic mowing systems
+                                </strong>
+                                ,”
+                                <span class="font-italic">International Journal of Intelligent Robotics and Applications </span>
+                                (2021). 
                                 <a href="https://doi.org/10.1007/s41315-021-00199-8" target="_blank">https://doi.org/10.1007/s41315-021-00199-8</a> 
                             </p>
                         </div>
@@ -409,9 +403,9 @@
                                             alt="ursrobot.png">
                                     </div>
                                 </div>
-                                <div class="row ">
+                                <div class="row text-justify">
                                     <div class="col-1"> 1. </div>
-                                    <div class="col-11">
+                                    <div class="col-11  ">
                                         Developed an Obstacle Avoidance System for outdoor robot (mower)
                                         using Boustrophedon motions and the Rapid Voronoi diagram combined with Feedback
                                         Coverage Path Planning algorithm (Python) based on GPS, IMU, Odometry on Robot
@@ -436,7 +430,7 @@
                             <div class="dot"><b></b></div>
                             <!--內容-->
                             <div class="con">
-                                <div class="row ">
+                                <div class="row">
                                     <div class="col-7">
                                         <h3>Syntec</h3>
                                         <p class="desc">2017.07 (Hsinchu, Taiwan) <br> 2017.08 (Suzhou, China)</p>
@@ -445,7 +439,7 @@
                                         <img src="images/syntec.jpg" class="float-right" width="75%" alt="syntec.png">
                                     </div>
                                 </div>
-                                <div class="row ">
+                                <div class="row text-justify">
                                     <div class="col-1"> 1. </div>
                                     <div class="col-11">
                                         Implemented a production line automation project based on PLC, MACRO, eHMI for
@@ -480,9 +474,8 @@
     </div>
 
     <div class="footer clearfix">
-        Powered By CHUN; Last modified : 2021/08/26
+        Powered By Vincent; Last updated : 2021/09/03
         <a href="https://github.com/vincent0628/" target="_blank">My Github : https://github.com/vincent0628/</a>
-        <!-- <a href="javascript:;" target="_blank"></a> -->
     </div>
 
     <!--個人基本資訊-->
@@ -499,11 +492,8 @@
                 <p>Software/Firmware Engineer</p>
                 <p>--To be or not to be, that is a question.--</p>
                 <br>
-                <p>
-                    <i aria-hidden="true" data-icon="&#xe010;"></i>
-                    vincent0910628007@gmail.com
-                </p>
-                <p><i aria-hidden="true" data-icon="&#xe00b;"></i>0910628007</p>
+                <p>vincent0910628007@gmail.com</p>
+                <p>0910628007</p>
             </div>
         </div>
     </div>
