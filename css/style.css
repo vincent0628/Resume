@@ -93,7 +93,7 @@ i { font-size: 20px; }
 /* layout */
 .main { margin: 0 auto; background-color: #fff; }
 .content { width: 99%; padding: 2.5%; margin: 0; }
-.header { padding: 10px 5%; }
+.header { padding: 0px 5%; }
 .avatar { width: 152px; height: 152px; position: relative; }
 .avatar .avatar_pic { width: 150px; height: 150px; display: block; background: url(../images/avatar.png) no-repeat center center;  border: 1px #ccc solid; overflow: hidden; }
 .avatar:hover .avatar_pic { animation:myloading 1s linear infinite; -moz-animation:myloading 1s linear infinite; -webkit-animation:myloading 1s linear infinite; -o-animation:myloading 1s linear infinite; }
